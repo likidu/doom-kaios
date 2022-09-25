@@ -19,4 +19,3 @@ emmake make -j8 VERBOSE=1 || exit 1
 
 cd ..
 ./package-app.sh debug
-./install.sh debug

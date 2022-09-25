@@ -10,6 +10,7 @@ include_directories(
 )
 file (GLOB_RECURSE SRC_FILES src/*.c gifenc/*.c opl/*.c sdl_mixer/*.c)
 
+# -s WASM=0 \
 set(CMAKE_C_FLAGS " \
     ${CMAKE_C_FLAGS} -Wall \
     -Wno-\#warnings \
@@ -19,7 +20,6 @@ set(CMAKE_C_FLAGS " \
     -Werror=format \
     -Werror=format-security \
     -Werror=format-nonliteral \
-    -s WASM=0 \
     -s USE_SDL=2 \
     -s ALLOW_MEMORY_GROWTH=1 \
     -s INITIAL_MEMORY=41943040 \
